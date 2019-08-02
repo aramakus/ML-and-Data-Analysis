@@ -2,6 +2,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from pylab import rcParams
+
+'''
+This code reads .xyz file with a short DNA structure and finds an axis with 
+a cylinder, if centered at that axis and encloses the whole molecule, has the 
+smallest diameter. Can be viewed as an approximate axis of symmetry. 
+Note - least squares doesn't work very well on this example. 
+'''
+
 rcParams['figure.figsize'] = 10, 10
 
 # Read the content of simple DNA structure file
